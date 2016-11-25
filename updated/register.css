@@ -1,0 +1,123 @@
+body 
+{
+  margin:0;
+}
+#d1
+{
+    max-width:100%;
+    max-height:auto;
+}
+ul 
+{
+    list-style-type: none;
+    margin-left:10px;
+	margin-right:10px;
+    padding:0px;
+    overflow: hidden;
+    background-color:#4CAF50;
+    max-width: 100%;
+	border:1px transparent;
+	border-radius:4px;
+}
+li 
+{
+    float: left;
+}
+
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) 
+{
+    background-color: pink;
+}
+
+.active 
+{
+    background-color:navy;
+}
+#d2
+{
+    margin-left:350px;
+    max-width:50%;
+    max-height:auto;
+    background-color:orange;
+    opacity:0.8;
+}
+#t1
+{
+    max-width:35%;
+    margin-left:10px;
+}
+#l1
+{
+    margin-left:200px;
+}
+#t2
+{
+    max-width:35%;
+    margin-left:10px;
+}
+#l2
+{
+    margin-left:200px;
+}
+#t3
+{
+    max-width:35%;
+    margin-left:20px;
+}
+#l3
+{
+    margin-left:200px;
+}
+#t4
+{
+    max-width:35%;
+    margin-left:10px;
+}
+#l4
+{
+    margin-left:200px;
+}
+#bn
+{
+    margin-left:320px;
+    max-width:60%;
+    max-height:auto;
+    background-color:blue;
+    color:white;
+    border:1px solid blue;
+    border-radius:5px;
+}
+h1
+{
+     max-width:50%;
+     margin-left:270px;
+     color:purple;
+}
+#d3
+{
+    max-width:45%;
+}
+p
+{
+    margin-left:350px;
+    color:red;
+}
+#bn1
+{
+    margin-left:180px;
+    max-width:60%;
+    max-height:auto;
+    background-color:blue;
+    color:white;
+    border:1px solid blue;
+    border-radius:5px;
+}

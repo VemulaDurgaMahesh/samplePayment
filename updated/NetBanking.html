@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="netbanking.css">
+<script type="text/javascript">
+function validate()
+{
+	var a = document.getElementById("t1").value;
+	var b = document.getElementById("t2").value;
+	var c = document.getElementById("t3").value;
+
+	 var letters = /^[A-Za-z]+$/; 
+	 //var numbers = /^[0-9]+$/;
+
+	 if(a.match(letters) && b.match(letters) && (c.length=8))
+	 {
+	 	alert("Successfully Registered");
+	 }
+	 else
+	 {
+	 	alert("Enter Correct Details");
+	 }
+} 
+</script>
+</head>
+<body bgcolor="Snow">
+<div id="d1">
+<ul>
+  <li><a href="main.html">HomePage</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+  <li><a href="Registration.html">Registration</a></li>
+  <li><a class="active" href="Pay.html">Payment</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+</ul>
+</div>
+<div id="d2">
+<br>
+<h1>Submit Your Debit Card Details</h1>
+<label id="l1">Select any Bank:&nbsp;</label><select id="t1">
+<option value="-----">-----</option>
+<option value="SBI">SBI</option>
+<option value="ICICI">ICICI</option>
+<option value="HDFC">HDFC</option>
+</select><br><br>
+<label id="l2">User Name:&nbsp;</label><input type="text" id="t2" style="margin-left:40px;"><br><br>
+<label id="l3">Password :&nbsp;</label><input type="password" id="t3" style="margin-left:44px;"><br><br>
+<button type="submit" id="bn" onclick="validate()">Submit</button>
+<buton id="bn1" onclick="window.location.href='Pay.html';">Back</buton>
+</div>
+</body>
+</html>

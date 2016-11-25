@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="credit.css">
+<script type="text/javascript">
+function validate()
+{
+	var a = document.getElementById("t1").value;
+	var b = document.getElementById("t2").value;
+	var c = document.getElementById("t3").value;
+
+	 var letters = /^[A-Za-z]+$/; 
+	 var numbers = /^[0-9]+$/;
+
+	 if(a.match(numbers) && b.match(letters) &&  c.match(numbers) && (a.length=16) && (c.length=3))
+	 {
+	 	alert("Successfully Registered");
+	 }
+	 else
+	 {
+	 	alert("Enter Correct Details");
+	 }
+} 
+</script>
+</head>
+<body bgcolor="Linen">
+<div id="d1">
+<ul>
+  <li><a href="main.html">HomePage</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="Registration.html">Registration</a></li>
+  <li><a class="active" href="Pay.html">Payment</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+</ul>
+</div>
+<div id="d2">
+<br>
+<h1>Submit Your Credit Card Details</h1>
+<label id="l1">Enter Credit Card Number:&nbsp;</label><input type="text" id="t1"><br><br>
+<label id="l2">Name on Card:&nbsp;</label><input type="text" id="t2" style="margin-left:87px;"><br><br>
+<label id="l3">CVV     :&nbsp;</label><input type="password" id="t3" style="margin-left:140px;"><br><br>
+<button type="submit" id="bn" onclick="validate()">Submit</button>
+<buton id="bn1" onclick="window.location.href='Pay.html';">Back</buton>
+</div>
+</body>
+</html>

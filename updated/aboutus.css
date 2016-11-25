@@ -1,0 +1,69 @@
+body 
+{
+  margin:0;
+}
+#d1
+{
+    width:100%;
+    height:auto;
+}
+ul 
+{
+    list-style-type: none;
+    margin-left:10px;
+	margin-right:10px;
+    padding:0px;
+    overflow: hidden;
+    background-color:#4CAF50;
+    max-width: 100%;
+	border:1px transparent;
+	border-radius:4px;
+}
+li 
+{
+    float: left;
+}
+
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) 
+{
+    background-color: pink;
+}
+
+.active 
+{
+    background-color:tomato;
+}
+#d2
+{
+    max-width:100%;
+    margin-left:400px;
+}
+p
+{
+    margin-left:90px;
+
+}
+h1
+{
+    color:red;
+}
+#d4
+{
+    max-width:100%;
+    position:absolute;
+    text-align:justify;
+    font-size:20px;
+}
+p
+{
+     margin-left:20px;
+}

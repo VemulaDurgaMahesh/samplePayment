@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="register.css">
+<script type="text/javascript">
+function validate()
+{
+	var a = document.getElementById("t1").value;
+	var b = document.getElementById("t2").value;
+	//var c = document.getElementById("t3").value;
+	var d = document.getElementById("t4").value;
+
+	 var letters = /^[A-Za-z]+$/; 
+	 var numbers = /^[0-9]+$/;
+	 //var date = getDate();
+
+	 if(a.match(letters) && b.match(letters) &&  d.match(numbers) && (d.length=10))
+	 {
+	 	alert("Successfully Registered");
+	 }
+	 else
+	 {
+	 	alert("Enter Correct Details");
+	 }
+} 
+</script>
+</head>
+<body bgcolor="LightGoldenRodYellow">
+<div id="d1">
+<ul>
+  <li><a href="main.html">HomePage</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+  <li><a class="active" style="background:navy;" href="Registration.html">Registration</a></li>
+  <li><a href="Pay.html">Payment</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+</ul>
+</div>
+<div id="d2">
+<br>
+<h1>Registration</h1>
+<label id="l1">First Name:&nbsp;</label><input type="text" id="t1" style="margin-left:15px;"><br><br>
+<label id="l2">Last Name:&nbsp;</label><input type="text" id="t2" style="margin-left:15px;"><br><br>
+<label id="l3">Date     :&nbsp;</label><input type="date" id="t3" style="margin-left:50px;"><br><br>
+<label id="l4">Ph.Number:&nbsp;</label><input type="text" id="t4"><br><br>
+<button type="submit" id="bn" onclick="validate()">Register</button>
+</div>
+<div id="d3">
+<p><b>click the below button on successfull completion of registeration to enter in to payment section</b> <br><br>
+<!--<a href="Pay.html">Click here</a>
+<button onclick="open()">Click</button>-->
+<input type="button" id="bn1" onclick="location.href='Pay.html';" value="Click" >
+</p>
+</div>
+</body>
+</html>
